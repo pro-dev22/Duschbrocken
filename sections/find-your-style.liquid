@@ -1,3 +1,90 @@
+<style>
+    .Duschbrocken-web-margin {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.find-your-style-colllection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.find-your-style h2 {
+    font-family: Poppins;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: center;
+    color: #1E3851;
+}
+
+.fys-collection-cad p {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    background-color: #1E385196;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.fys-collection-cad {
+    position: relative;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .find-your-style-colllection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+    .find-your-style-colllection a {
+        display: flex;
+        justify-content: center;
+    }
+    .find-your-style-colllection a {
+    width: 100%;
+    max-width: 185px;
+    margin: auto;
+    }
+
+    .find-your-style-colllection div {
+        width: 100%;
+        max-width: 185px;
+    }
+
+    .find-your-style-colllection img {
+        width: 100%;
+    }
+
+    .find-your-style-colllection {
+        gap: 0;
+    }
+    .fys-collection-cad p {
+        padding: 5px;
+    }
+    .find-your-style h2 {
+        font-size: 24px;
+        margin: 0;
+    }   
+}
+
+
+
+</style>
+
+
+
 
 <div class="Duschbrocken-web-margin">
     <div class="find-your-style">
@@ -5,10 +92,12 @@
         <div class="find-your-style-colllection">
             {%- for block in section.blocks -%}
                 {%- assign collection = block.settings.collection -%}
-                <div class="fys-collection-cad">
-                    <img src="{{ collection.featured_image | img_url: 'master'}}">
-                    <p>{{ collection.title }}</p>
-                </div>
+                    <a href="{{ collection.url }}">
+                    <div class="fys-collection-cad">
+                        <img src="{{ collection.featured_image | img_url: 'master'}}">
+                        <p>{{ collection.title }}</p>
+                    </div>
+                    </a>
             {%- endfor -%}
         </div>
     </div>
