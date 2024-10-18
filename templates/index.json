@@ -61,10 +61,31 @@
           "settings": {
             "collection": "ottoman-beds"
           }
+        },
+        "block_XTkrQB": {
+          "type": "block",
+          "settings": {
+            "collection": "ottoman-beds"
+          }
+        },
+        "block_g7ReR6": {
+          "type": "block",
+          "settings": {
+            "collection": "ottoman-beds"
+          }
+        },
+        "block_XLhptK": {
+          "type": "block",
+          "settings": {
+            "collection": "ottoman-beds"
+          }
         }
       },
       "block_order": [
-        "block_Vyf6e7"
+        "block_Vyf6e7",
+        "block_XTkrQB",
+        "block_g7ReR6",
+        "block_XLhptK"
       ],
       "settings": {
         "text": "Find Your Style"
