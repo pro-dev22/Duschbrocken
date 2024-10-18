@@ -55,6 +55,17 @@
     },
     "find_your_style_FRqGcN": {
       "type": "find-your-style",
+      "blocks": {
+        "block_WdP4Qw": {
+          "type": "block",
+          "settings": {
+            "collection": "ottoman-beds"
+          }
+        }
+      },
+      "block_order": [
+        "block_WdP4Qw"
+      ],
       "settings": {
         "text": "Find Your Style"
       }
