@@ -1,0 +1,51 @@
+
+<div class="Duschbrocken-web-margin">
+    <div class="find-your-style">
+        <h2>{{ section.settings.text }} </h2>
+        <div class="find-your-style-colllection">
+            {%- for block in section.blocks -%}
+                {%- assign collection = block.settings.collection -%}
+                <div class="fys-collection-cad">
+                    <img src="{{ collection.featured_image |  image_url: 'master' }}">
+                    <p>{{ collection.title }}</p>
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% schema %}
+  {
+  "name": "Code In Shopify Section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Block",
+      "type": "block",
+      "settings": [
+        {
+          "type": "collection",
+          "label": "Collection",
+          "id": "collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Code In Shopify Section"
+    }
+  ]
+}  
+{% endschema %}
