@@ -228,6 +228,43 @@
         "revws_nmbrs": "4.9 by 4500+ happy sleepers",
         "payments": "shopify://shop_images/Group_48097886.png"
       }
+    },
+    "easy_steps_4icxfK": {
+      "type": "easy-steps",
+      "blocks": {
+        "block_YDwnbL": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/Layer_x0020_1.svg",
+            "head": "Select product",
+            "text": "Choose your desired Sleepy product from the collections. With a wide range of options to choose from, you're sure to find the perfect fit for your bedroom."
+          }
+        },
+        "block_KLdaVG": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/1758163711645479139_1.svg",
+            "head": "Easy payment",
+            "text": "Making your payment online is quick and secure with Sleepy. You can choose to pay now or pay later, with 0% interest."
+          }
+        },
+        "block_9teNbW": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/1327111671634472872_1.svg",
+            "head": "Free 2 man delivery",
+            "text": "Get free delivery on all orders, with optional assembly and removal service. So sit back, relax, and enjoy your new purchase!"
+          }
+        }
+      },
+      "block_order": [
+        "block_YDwnbL",
+        "block_KLdaVG",
+        "block_9teNbW"
+      ],
+      "settings": {
+        "heading": "Hassle-free shopping experience in 3 easy steps"
+      }
     }
   },
   "order": [
@@ -236,6 +273,7 @@
     "find_your_style_yXhkJc",
     "discover_you_fav_iynQgp",
     "icon_with_text_waGhpH",
-    "full_banner_bg_img_JRGqDe"
+    "full_banner_bg_img_JRGqDe",
+    "easy_steps_4icxfK"
   ]
 }
