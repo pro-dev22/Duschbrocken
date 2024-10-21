@@ -52,10 +52,49 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "find_your_style_GNf3mX": {
+      "type": "find-your-style",
+      "blocks": {
+        "block_Kkp3BR": {
+          "type": "block",
+          "settings": {
+            "collection": "ottoman-beds"
+          }
+        },
+        "block_A6JBdw": {
+          "type": "block",
+          "settings": {
+            "collection": "ottoman-beds"
+          }
+        },
+        "block_M8M9Qq": {
+          "type": "block",
+          "settings": {
+            "collection": "ottoman-beds"
+          }
+        },
+        "block_GrWehM": {
+          "type": "block",
+          "settings": {
+            "collection": "ottoman-beds"
+          }
+        }
+      },
+      "block_order": [
+        "block_Kkp3BR",
+        "block_A6JBdw",
+        "block_M8M9Qq",
+        "block_GrWehM"
+      ],
+      "settings": {
+        "text": "FInd Your Style"
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "find_your_style_GNf3mX"
   ]
 }
