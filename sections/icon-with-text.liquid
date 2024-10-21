@@ -52,8 +52,21 @@
       height: 100%;
       object-fit: cover;
     }
+    .swiper-button-next, .swiper-button-prev {
+    color: #1E3851;
+}
 
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 15px;
+    font-weight: bold;
+}
+.swiper-button-prev {
+    left: 0;
+}
 
+.swiper-button-next {
+    right: 0;
+}
 
 @media only screen and (max-width: 600px) {
     .text-icons {
@@ -76,25 +89,12 @@
     text-align: right;
     justify-content: center;
 }
-.swiper-button-prev {
-    left: 0;
-}
 
-.swiper-button-next {
-    right: 0;
-}
 .text\/icon-slider.swiper-slide.swiper-slide-next {
     text-align: left;
     justify-content: left;
 }
-.swiper-button-next, .swiper-button-prev {
-    color: #1E3851;
-}
 
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 15px;
-    font-weight: bold;
-}
 }
 </style>
 
