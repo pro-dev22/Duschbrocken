@@ -88,13 +88,66 @@
         "block_GrWehM"
       ],
       "settings": {
-        "text": "FInd Your Style"
+        "text": "Find Your Style"
+      }
+    },
+    "discover_you_fav_WpU4hy": {
+      "type": "discover-you-fav",
+      "blocks": {
+        "block_EnDwef": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        },
+        "block_TGx87b": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        },
+        "block_wfxYYw": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        },
+        "block_RVUnLa": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        },
+        "block_xgCakX": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        },
+        "block_bXbTpP": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        }
+      },
+      "block_order": [
+        "block_EnDwef",
+        "block_TGx87b",
+        "block_wfxYYw",
+        "block_RVUnLa",
+        "block_xgCakX",
+        "block_bXbTpP"
+      ],
+      "settings": {
+        "text": "Discover Your Favourites"
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "find_your_style_GNf3mX"
+    "find_your_style_GNf3mX",
+    "discover_you_fav_WpU4hy"
   ]
 }
