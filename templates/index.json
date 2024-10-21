@@ -94,6 +94,45 @@
     },
     "discover_you_fav_iynQgp": {
       "type": "discover-you-fav",
+      "blocks": {
+        "block_kKBYaf": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        },
+        "block_gExrfK": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        },
+        "block_aAKkW6": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        },
+        "block_itUXNE": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        },
+        "block_9w3mmg": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers"
+          }
+        }
+      },
+      "block_order": [
+        "block_kKBYaf",
+        "block_gExrfK",
+        "block_aAKkW6",
+        "block_itUXNE",
+        "block_9w3mmg"
+      ],
       "settings": {
         "text": "Discover Your Favourites"
       }
