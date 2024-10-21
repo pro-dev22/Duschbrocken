@@ -1,0 +1,128 @@
+
+<style>
+  .custom-accordion {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: #1E3851;
+}
+
+.active, .custom-accordion:hover {
+  background-color: #ccc;
+}
+
+.custom-accordion:after {
+    content: '\002B';
+    color: #1E3851;
+    float: right;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.custom-panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.faqs-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.custom-faqs {
+    margin: 50px 0;
+}
+.faqs-inner h2 {
+    font-family: Poppins;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: center;
+    color: #1E3851;
+}
+</style>
+
+<div class="custom-faqs">
+  <div class="faqs-inner">
+    <h2>{{ section.settings.text }}</h2> 
+    <div class="all-faqs">
+      {%- for block in section.blocks -%}
+        <div class="the-accordians">
+          <button class="custom-accordion">{{ block.settings.heading }}</button>
+          <div class="custom-panel">
+            <p>{{ block.settings.para }}</p>
+          </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("custom-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+{% schema %}
+  {
+  "name": "Accordions",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Text",
+      "id": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Block",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Accordion Heading",
+          "id": "heading"
+        },
+        {
+          "type": "text",
+          "label": "Accordion Paragraph",
+          "id": "para"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Accordions"
+    }
+  ]
+}  
+{% endschema %}
