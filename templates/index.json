@@ -136,12 +136,62 @@
       "settings": {
         "text": "Discover Your Favourites"
       }
+    },
+    "icon_with_text_waGhpH": {
+      "type": "icon-with-text",
+      "blocks": {
+        "block_iLqwjd": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/icon__warranty_badge.png",
+            "text": "5 Years<br>\nWarranty"
+          }
+        },
+        "block_6NXEbD": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/icon__shipping_warranty.png",
+            "text": "60 Night Risk-<br>Free Trial"
+          }
+        },
+        "block_if9XMX": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/Color.png",
+            "text": "0% Interest<br>\nRate"
+          }
+        },
+        "block_mzCXF7": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/emoji__delivery_truck.png",
+            "text": "Fast Free<br>\nDelivery"
+          }
+        },
+        "block_gGDYJV": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/emoji__bed.png",
+            "text": "Handmade in<br>\nthe UK"
+          }
+        }
+      },
+      "block_order": [
+        "block_iLqwjd",
+        "block_6NXEbD",
+        "block_if9XMX",
+        "block_mzCXF7",
+        "block_gGDYJV"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "find_your_style_yXhkJc",
-    "discover_you_fav_iynQgp"
+    "discover_you_fav_iynQgp",
+    "icon_with_text_waGhpH"
   ]
 }
