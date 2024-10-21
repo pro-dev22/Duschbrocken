@@ -196,10 +196,28 @@
             "heading": "Happiness guaranteed or money back",
             "text": "We're committed to your satisfaction and offer a 5-year warranty. If you're not happy with the product, within 60 days of your purchase, we'll refund your money or send you a new  bed— NO QUESTIONS ASKED!"
           }
+        },
+        "block_qNYRbn": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/Sustainably_sourced_handmade_in_the_UK.svg",
+            "heading": "Sustainably sourced & handmade in the UK",
+            "text": "Sleepy Divan Bed is hand-crafted & built-to-last, using solid hardwood sourced from sustainable forests. This means you get to enjoy your bed for years to come without any guilt."
+          }
+        },
+        "block_ejbXnW": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/Group_48097902.svg",
+            "heading": "Customisable options for your specific needs ",
+            "text": "Sleepy Divan Bed can be tailored to fit any bedroom with customizable options for color, size, storage, headboard, and base type. Plus, the stylish design is sure to complement any décor."
+          }
         }
       },
       "block_order": [
-        "block_khMtH6"
+        "block_khMtH6",
+        "block_qNYRbn",
+        "block_ejbXnW"
       ],
       "settings": {
         "bg_img": "shopify://shop_images/image_2.png",
