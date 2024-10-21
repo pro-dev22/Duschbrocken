@@ -4,6 +4,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     row-gap: 40px;
+    margin: 0 10px;
 }
 
 .discover-cards img {
@@ -90,6 +91,34 @@ h2.discover-title {
     color: #1E3851;
     margin-top: 0;
 }
+.discover-cards-main a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .discover-cards-main {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+    .discover-cards-main {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    h2.discover-title {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .discover-favrs {
+        padding-top: 10px;
+    }
+}
+
+
+
 </style>
 
 
@@ -98,10 +127,13 @@ h2.discover-title {
        <h2 class="discover-title"> {{ section.settings.text }}</h2> 
         <div class="discover-cards-main">
         {%- for block in section.blocks -%}
+           <a href="{{ product.url }}">
             <div class="discover-cards">
                 {%- assign product = block.settings.product -%}
                 <div class="discover_img">
-                    <img src="{{ product.featured_image | img_url: 'master' }}">
+                    {% if product.featured_image != blank %}
+                     <img src="{{ product.featured_image | img_url: 'master' }}">
+                    {% endif %}
                 </div>
                 <div class="discover_info">
                     <div class="discover_info-ttl">
@@ -121,6 +153,7 @@ h2.discover-title {
                     </div>
                 </div>
             </div> 
+           </a>
         {%- endfor -%}    
       </div>
     </div>

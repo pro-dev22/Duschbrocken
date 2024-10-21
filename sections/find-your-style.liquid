@@ -10,6 +10,7 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .find-your-style h2 {
@@ -28,7 +29,6 @@
     width: 100%;
     font-family: Poppins;
     font-size: 16px;
-    font-weight: 600;
     line-height: 24px;
     text-align: center;
     color: white;
@@ -54,13 +54,11 @@
     }
     .find-your-style-colllection a {
     width: 100%;
-    max-width: 185px;
     margin: auto;
     }
 
     .find-your-style-colllection div {
         width: 100%;
-        max-width: 185px;
     }
 
     .find-your-style-colllection img {
@@ -81,6 +79,12 @@
         font-size: 24px;
         margin: 0;
     }   
+    .find-your-style {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}   
+
+
 }
 
 
@@ -98,7 +102,9 @@
                 {%- assign collection = block.settings.collection -%}
                     <a href="{{ collection.url }}">
                     <div class="fys-collection-cad">
-                        <img src="{{ collection.featured_image | img_url: 'master'}}">
+                        {% if collection.featured_image != blank %}
+                            <img src="{{ collection.featured_image | img_url: 'master'}}">
+                        {% endif %}
                         <p>{{ collection.title }}</p>
                     </div>
                     </a>

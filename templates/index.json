@@ -52,102 +52,10 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "find_your_style_GNf3mX": {
-      "type": "find-your-style",
-      "blocks": {
-        "block_Kkp3BR": {
-          "type": "block",
-          "settings": {
-            "collection": "ottoman-beds"
-          }
-        },
-        "block_A6JBdw": {
-          "type": "block",
-          "settings": {
-            "collection": "ottoman-beds"
-          }
-        },
-        "block_M8M9Qq": {
-          "type": "block",
-          "settings": {
-            "collection": "ottoman-beds"
-          }
-        },
-        "block_GrWehM": {
-          "type": "block",
-          "settings": {
-            "collection": "ottoman-beds"
-          }
-        }
-      },
-      "block_order": [
-        "block_Kkp3BR",
-        "block_A6JBdw",
-        "block_M8M9Qq",
-        "block_GrWehM"
-      ],
-      "settings": {
-        "text": "Find Your Style"
-      }
-    },
-    "discover_you_fav_WpU4hy": {
-      "type": "discover-you-fav",
-      "blocks": {
-        "block_EnDwef": {
-          "type": "block",
-          "settings": {
-            "product": "antique-drawers"
-          }
-        },
-        "block_TGx87b": {
-          "type": "block",
-          "settings": {
-            "product": "antique-drawers"
-          }
-        },
-        "block_wfxYYw": {
-          "type": "block",
-          "settings": {
-            "product": "antique-drawers"
-          }
-        },
-        "block_RVUnLa": {
-          "type": "block",
-          "settings": {
-            "product": "antique-drawers"
-          }
-        },
-        "block_xgCakX": {
-          "type": "block",
-          "settings": {
-            "product": "antique-drawers"
-          }
-        },
-        "block_bXbTpP": {
-          "type": "block",
-          "settings": {
-            "product": "antique-drawers"
-          }
-        }
-      },
-      "block_order": [
-        "block_EnDwef",
-        "block_TGx87b",
-        "block_wfxYYw",
-        "block_RVUnLa",
-        "block_xgCakX",
-        "block_bXbTpP"
-      ],
-      "settings": {
-        "text": "Discover Your Favourites"
-      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection",
-    "find_your_style_GNf3mX",
-    "discover_you_fav_WpU4hy"
+    "featured_collection"
   ]
 }
