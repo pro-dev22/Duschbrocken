@@ -185,6 +185,31 @@
       ],
       "settings": {
       }
+    },
+    "full_banner_bg_img_JRGqDe": {
+      "type": "full-banner-bg-img",
+      "blocks": {
+        "block_khMtH6": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/Group_48097901.svg",
+            "heading": "Happiness guaranteed or money back",
+            "text": "We're committed to your satisfaction and offer a 5-year warranty. If you're not happy with the product, within 60 days of your purchase, we'll refund your money or send you a new  bed— NO QUESTIONS ASKED!"
+          }
+        }
+      },
+      "block_order": [
+        "block_khMtH6"
+      ],
+      "settings": {
+        "bg_img": "shopify://shop_images/image_2.png",
+        "text": "Sleepy Divan Beds",
+        "btn-txt": "Shop Divan Beds",
+        "url": "",
+        "rv_img": "shopify://shop_images/Frame.svg",
+        "revws_nmbrs": "4.9 by 4500+ happy sleepers",
+        "payments": "shopify://shop_images/Group_48097886.png"
+      }
     }
   },
   "order": [
@@ -192,6 +217,7 @@
     "featured_collection",
     "find_your_style_yXhkJc",
     "discover_you_fav_iynQgp",
-    "icon_with_text_waGhpH"
+    "icon_with_text_waGhpH",
+    "full_banner_bg_img_JRGqDe"
   ]
 }
