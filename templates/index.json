@@ -91,11 +91,18 @@
       "settings": {
         "text": "Find Your Style"
       }
+    },
+    "discover_you_fav_iynQgp": {
+      "type": "discover-you-fav",
+      "settings": {
+        "text": "Discover Your Favourites"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "find_your_style_yXhkJc"
+    "find_your_style_yXhkJc",
+    "discover_you_fav_iynQgp"
   ]
 }
