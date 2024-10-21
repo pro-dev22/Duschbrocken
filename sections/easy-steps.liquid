@@ -1,0 +1,168 @@
+<style>
+    .easy-steps-3 {
+    width: 100%;
+    max-width: 1084px;
+    margin: 50px auto;
+}
+
+.easy-steps-3 h2 {
+    font-family: Poppins;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    color: #1E3851;
+}
+
+.easy-steps-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+    gap: 15px;
+}
+
+.easy-step-card {
+    max-width: 340px;
+    border: 1px solid #F89201;
+    border-radius: 8px;
+    background-color: #FFF8ED;
+    padding: 20px;
+    text-align: center;
+}
+
+.easy-step-card img {
+    max-width: 50px;
+    display: flex;
+    margin: auto;
+}
+
+.easy-step-card h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    margin: 0;
+    color: #1E3851;
+}
+
+.easy-step-card p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #1E3851;
+    margin-bottom: 0;
+
+}
+
+@media only screen and (max-width: 769px) {
+    .easy-steps-3 h2 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+}
+
+.easy-step-card h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+}
+
+.easy-step-card p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+    .easy-steps-card {
+    flex-direction: column;
+    }
+
+    .easy-step-card {
+        margin: auto;
+    }
+
+    .easy-steps-3 {
+        margin: 30px auto;
+    }
+
+    .easy-steps-3 h2 {
+        max-width: 90%;
+    }
+}
+
+</style>
+
+<div class="easy-steps-main">
+    <div class="easy-steps-3">
+        <h2>{{ section.settings.heading }}</h2> 
+            <div class="easy-steps-card">
+                {%- for block in section.blocks -%}
+                    <div class="easy-step-card">
+                        {%- assign image = block.settings.icon -%}
+                        {% if image != blank %}<img src="{{ image | img_url : 'master' }}">{% endif %}
+                        <h3>{{ block.settings.head }}</h3> 
+                        <p>{{ block.settings.text }}</p> 
+                    </div>
+                {%- endfor -%}
+            </div>
+    </div>
+</div>
+
+
+
+
+
+{% schema %}
+  {
+  "name": "Easy Steps",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Block",
+      "type": "block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Card Icon",
+          "id": "icon"
+        },
+        {
+          "type": "text",
+          "label": "Card Heading",
+          "id": "head"
+        },
+        {
+          "type": "text",
+          "label": "Card Text",
+          "id": "text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Easy Steps"
+    }
+  ]
+}  
+{% endschema %}
