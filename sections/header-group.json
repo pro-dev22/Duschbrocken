@@ -39,6 +39,7 @@
       "type": "header",
       "settings": {
         "logo_position": "top-center",
+        "free_swatches": "shopify://shop_images/swatches.svg",
         "menu": "header-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
