@@ -3688,7 +3688,13 @@ details-modal.header__search {
 details-modal.header__search .svg-wrapper {
   justify-content: left;
 }
-
+p.announcement-bar__message.h5 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.5px;
+  text-align: center;
+}
 
 
 
