@@ -13,8 +13,6 @@
     line-height: 27px;
     text-align: left;
     color: #1E3851;
-    border: 1px solid #B0B0B066;
-    border-bottom: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -78,6 +76,19 @@ button.custom-accordion p {
 .the-accordians:last-child .custom-accordion {
     border-bottom: 1px solid #B0B0B066;
     border-radius: 0 0 8px 8px;
+}
+.the-accordians {
+    border: 1px solid #B0B0B066;
+    border-bottom: 0;
+}
+
+.the-accordians:last-child {
+    border-bottom: 1px solid #B0B0B066;
+    border-radius: 0 0 8px 8px;
+}
+
+.the-accordians:first-child {
+    border-radius: 8px 8px 0 0;
 }
 
 @media only screen and (max-width: 600px) {
