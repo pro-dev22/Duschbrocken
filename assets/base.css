@@ -3595,3 +3595,137 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+
+/* My css */
+
+
+.custom-nav {
+  background-color: #1E3851;
+  text-align: center;
+}
+
+.list-menu.list-menu--inline li a, .list-menu.list-menu--inline li header-menu summary {
+  color: white;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+
+.header__submenu.list-menu li a {
+  color: black;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+.cart-count-bubble {
+  display: none;
+}
+a#cart-icon-bubble svg {
+  width: 24px;
+  height: 24px;
+  fill: #1E3851;
+}
+a#cart-icon-bubble {
+  width: 100%;
+  text-decoration: none;
+}
+span.bubble-basket {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: left;
+  color: #1E3851;
+  letter-spacing: 0;
+}
+
+span.bubble-money {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: #F89201;
+  justify-content: left;
+  letter-spacing: 0;
+}
+.free-swatches a {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.free-swatches {
+  display: flex;
+}
+
+span.free_swatches-text {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: left;
+  color: #1E3851;
+}
+svg.search-svg-glbl {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+details-modal.header__search {
+  width: 100%;
+  max-width: 44%;
+  border-bottom: 2px solid #1E3851;
+}
+
+details-modal.header__search .svg-wrapper {
+  justify-content: left;
+}
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media only screen and (max-width: 990px) {
+  .free-swatches {
+    display: none;
+}
+
+.icon-cart-additional {
+    display: none;
+}
+details-modal.header__search {
+  width: fit-content;
+  border: none;
+  text-align: center;
+}
+
+details-modal.header__search .svg-wrapper {
+  justify-content: center;
+}
+.cart-count-bubble {
+  display: block;
+  top: 0;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+}
+.header {
+  padding: 0 1.5rem !important;
+}
+}
