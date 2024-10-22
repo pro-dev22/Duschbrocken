@@ -305,56 +305,6 @@
         "heading": "Hassle-free shopping experience in 3 easy steps"
       }
     },
-    "custom_accordion_RrYaVC": {
-      "type": "custom-accordion",
-      "blocks": {
-        "block_QM4Fnn": {
-          "type": "block",
-          "settings": {
-            "heading": "1. How long does delivery take once I have placed my order?",
-            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
-          }
-        },
-        "block_jxENNH": {
-          "type": "block",
-          "settings": {
-            "heading": "2. Can I choose my delivery date and time?",
-            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
-          }
-        },
-        "block_DJYkdp": {
-          "type": "block",
-          "settings": {
-            "heading": "3. Can I place my order over the phone?",
-            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
-          }
-        },
-        "block_be8etq": {
-          "type": "block",
-          "settings": {
-            "heading": "4. What is a 60-night risk-free trial, and what does this mean?",
-            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
-          }
-        },
-        "block_gaPakb": {
-          "type": "block",
-          "settings": {
-            "heading": "5. What does the 5 years warranty cover?",
-            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
-          }
-        }
-      },
-      "block_order": [
-        "block_QM4Fnn",
-        "block_jxENNH",
-        "block_DJYkdp",
-        "block_be8etq",
-        "block_gaPakb"
-      ],
-      "settings": {
-        "text": "Frequently Asked Questions"
-      }
-    },
     "bedstr_mattress_cMaKzV": {
       "type": "bedstr-mattress",
       "blocks": {
@@ -406,6 +356,56 @@
         "revws_nmbrs": "4.9 by 4500+ happy sleepers",
         "payments": "shopify://shop_images/Group_48097886.png"
       }
+    },
+    "custom_accordion_RrYaVC": {
+      "type": "custom-accordion",
+      "blocks": {
+        "block_QM4Fnn": {
+          "type": "block",
+          "settings": {
+            "heading": "1. How long does delivery take once I have placed my order?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        },
+        "block_jxENNH": {
+          "type": "block",
+          "settings": {
+            "heading": "2. Can I choose my delivery date and time?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        },
+        "block_DJYkdp": {
+          "type": "block",
+          "settings": {
+            "heading": "3. Can I place my order over the phone?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        },
+        "block_be8etq": {
+          "type": "block",
+          "settings": {
+            "heading": "4. What is a 60-night risk-free trial, and what does this mean?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        },
+        "block_gaPakb": {
+          "type": "block",
+          "settings": {
+            "heading": "5. What does the 5 years warranty cover?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        }
+      },
+      "block_order": [
+        "block_QM4Fnn",
+        "block_jxENNH",
+        "block_DJYkdp",
+        "block_be8etq",
+        "block_gaPakb"
+      ],
+      "settings": {
+        "text": "Frequently Asked Questions"
+      }
     }
   },
   "order": [
@@ -417,7 +417,7 @@
     "full_banner_bg_img_JRGqDe",
     "sleepy_video_section_T3mhfV",
     "easy_steps_4icxfK",
-    "custom_accordion_RrYaVC",
-    "bedstr_mattress_cMaKzV"
+    "bedstr_mattress_cMaKzV",
+    "custom_accordion_RrYaVC"
   ]
 }
