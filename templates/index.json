@@ -354,6 +354,58 @@
       "settings": {
         "text": "Frequently Asked Questions"
       }
+    },
+    "bedstr_mattress_cMaKzV": {
+      "type": "bedstr-mattress",
+      "blocks": {
+        "block_dEzxTM": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/11.svg",
+            "heading": "Quality painless sleep",
+            "text": "Provide firm support to relieve the pressure off the painful hotspots, which means no more tossing and turning."
+          }
+        },
+        "block_j9VPGN": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/22.svg",
+            "heading": "Promote good form and posture",
+            "text": "Support each part of your body equally and hold your spine in a straight line throughout the night."
+          }
+        },
+        "block_JwCMYj": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/33.svg",
+            "heading": "Prevent allergic reaction",
+            "text": "Sleepy mattresses are hypoallergenic, so you can enjoy a healthy night’s sleep, whether you suffer from allergies or not."
+          }
+        },
+        "block_r86yXw": {
+          "type": "block",
+          "settings": {
+            "icon": "shopify://shop_images/44.svg",
+            "heading": "Isolate restless movements",
+            "text": "The responsive springs absorb motion and isolate movements. This means you will remain undisturbed even if your partner tosses and turns."
+          }
+        }
+      },
+      "block_order": [
+        "block_dEzxTM",
+        "block_j9VPGN",
+        "block_JwCMYj",
+        "block_r86yXw"
+      ],
+      "settings": {
+        "text": "BEDSTR Mattresses - Engineered for Dreams",
+        "bed": "shopify://shop_images/SONNO_2874300066_2_1.png",
+        "btn-txt": "Shop Divan Beds",
+        "url": "",
+        "rv_img": "shopify://shop_images/Frame.svg",
+        "revws_nmbrs": "4.9 by 4500+ happy sleepers",
+        "payments": "shopify://shop_images/Group_48097886.png"
+      }
     }
   },
   "order": [
@@ -365,6 +417,7 @@
     "full_banner_bg_img_JRGqDe",
     "sleepy_video_section_T3mhfV",
     "easy_steps_4icxfK",
-    "custom_accordion_RrYaVC"
+    "custom_accordion_RrYaVC",
+    "bedstr_mattress_cMaKzV"
   ]
 }
