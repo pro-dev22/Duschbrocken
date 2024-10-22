@@ -265,6 +265,56 @@
       "settings": {
         "heading": "Hassle-free shopping experience in 3 easy steps"
       }
+    },
+    "custom_accordion_RrYaVC": {
+      "type": "custom-accordion",
+      "blocks": {
+        "block_QM4Fnn": {
+          "type": "block",
+          "settings": {
+            "heading": "1. How long does delivery take once I have placed my order?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        },
+        "block_jxENNH": {
+          "type": "block",
+          "settings": {
+            "heading": "2. Can I choose my delivery date and time?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        },
+        "block_DJYkdp": {
+          "type": "block",
+          "settings": {
+            "heading": "3. Can I place my order over the phone?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        },
+        "block_be8etq": {
+          "type": "block",
+          "settings": {
+            "heading": "4. What is a 60-night risk-free trial, and what does this mean?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        },
+        "block_gaPakb": {
+          "type": "block",
+          "settings": {
+            "heading": "5. What does the 5 years warranty cover?",
+            "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat lobortis justo sit amet pulvinar. Morbi mattis pellentesque massa ac commodo. Cras condimentum dolor sed placerat consequat. Suspendisse at magna eu tellus iaculis porta."
+          }
+        }
+      },
+      "block_order": [
+        "block_QM4Fnn",
+        "block_jxENNH",
+        "block_DJYkdp",
+        "block_be8etq",
+        "block_gaPakb"
+      ],
+      "settings": {
+        "text": "Frequently Asked Questions"
+      }
     }
   },
   "order": [
@@ -274,6 +324,7 @@
     "discover_you_fav_iynQgp",
     "icon_with_text_waGhpH",
     "full_banner_bg_img_JRGqDe",
-    "easy_steps_4icxfK"
+    "easy_steps_4icxfK",
+    "custom_accordion_RrYaVC"
   ]
 }
