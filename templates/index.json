@@ -229,6 +229,45 @@
         "payments": "shopify://shop_images/Group_48097886.png"
       }
     },
+    "sleepy_video_section_T3mhfV": {
+      "type": "sleepy-video-section",
+      "blocks": {
+        "block_tJPgJ3": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/stock-footage-joyful-young-woman-relishing-a-hike-in-the-mountains.webm"
+          }
+        },
+        "block_ygxNLj": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/stock-footage-joyful-young-woman-relishing-a-hike-in-the-mountains.webm"
+          }
+        },
+        "block_PUReJz": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/stock-footage-joyful-young-woman-relishing-a-hike-in-the-mountains.webm"
+          }
+        },
+        "block_qD8yNK": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/stock-footage-joyful-young-woman-relishing-a-hike-in-the-mountains.webm"
+          }
+        }
+      },
+      "block_order": [
+        "block_tJPgJ3",
+        "block_ygxNLj",
+        "block_PUReJz",
+        "block_qD8yNK"
+      ],
+      "settings": {
+        "text": "Why Customers Love Sleepy",
+        "play": "shopify://shop_images/Group_48097801.svg"
+      }
+    },
     "easy_steps_4icxfK": {
       "type": "easy-steps",
       "blocks": {
@@ -324,6 +363,7 @@
     "discover_you_fav_iynQgp",
     "icon_with_text_waGhpH",
     "full_banner_bg_img_JRGqDe",
+    "sleepy_video_section_T3mhfV",
     "easy_steps_4icxfK",
     "custom_accordion_RrYaVC"
   ]
