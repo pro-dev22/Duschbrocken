@@ -1,11 +1,10 @@
 
 <style>
   .custom-accordion {
-    background-color: #eee;
+    background: transparent;
     cursor: pointer;
-    padding: 18px;
+    padding: 25px 20px;
     width: 100%;
-    border: none;
     outline: none;
     transition: 0.4s;
     font-family: Poppins;
@@ -14,10 +13,13 @@
     line-height: 27px;
     text-align: left;
     color: #1E3851;
+    border: 1px solid #B0B0B066;
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
-
-.active, .custom-accordion:hover {
-  background-color: #ccc;
+button.custom-accordion p {
+    margin: 0;
 }
 
 .custom-accordion:after {
@@ -38,6 +40,19 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  border-left: 1px solid #B0B0B066;
+  border-right: 1px solid #B0B0B066;
+}
+.custom-panel p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #1E3851;
+    margin-top: 0;
+}
+.all-faqs {
+    margin: 0 20px;
 }
 .faqs-inner {
     width: 100%;
@@ -56,6 +71,38 @@
     text-align: center;
     color: #1E3851;
 }
+.the-accordians:first-child .custom-accordion {
+    border-radius: 8px 8px 0 0;
+}
+
+.the-accordians:last-child .custom-accordion {
+    border-bottom: 1px solid #B0B0B066;
+    border-radius: 0 0 8px 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  button.custom-accordion {
+    font-size: 16px;
+        line-height: 21px;
+        align-items: center;
+        display: flex;
+        padding: 20px 10px;
+        justify-content: space-between;
+}
+.faqs-inner h2 {
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 80%;
+    margin: 30px auto;
+}
+.custom-panel {
+    padding: 0 10px;
+}
+button.custom-accordion p {
+    max-width: 90%;
+}
+}
+
 </style>
 
 <div class="custom-faqs">
@@ -64,7 +111,7 @@
     <div class="all-faqs">
       {%- for block in section.blocks -%}
         <div class="the-accordians">
-          <button class="custom-accordion">{{ block.settings.heading }}</button>
+          <button class="custom-accordion"><p>{{ block.settings.heading }}</p></button>
           <div class="custom-panel">
             <p>{{ block.settings.para }}</p>
           </div>
@@ -85,7 +132,7 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = "max-content";
     } 
   });
 }
