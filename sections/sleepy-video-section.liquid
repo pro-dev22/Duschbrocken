@@ -1,0 +1,174 @@
+<style>
+    .custom-video-up {
+    width: 100%;
+    max-width: 1088px;
+    margin: auto;
+}
+
+.custom-video-up h2 {
+    font-family: Poppins;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: center;
+    color: #1E3851;
+}
+
+.custom-video-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: auto 20px;
+    margin-bottom: 50px;
+}
+
+.custom-video-card video {
+    width: 100%;
+    display: flex;
+    min-height: 370px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.custom-video-card {
+    position: relative;
+}
+
+.video-play-btn {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .custom-video-cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-video-cards {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .custom-video-up h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+    .custom-video-cards {
+        margin-bottom: 0;
+    }
+    .custom-video-card video {
+        min-height: 229px;
+    }
+    .video-play-btn img {
+        max-width: 60px;
+    }
+}
+
+
+</style>
+
+
+<div class="custom-video-sec">
+    <div class="custom-video-up">
+        <h2>{{ section.settings.text }} </h2>
+        <div class="custom-video-cards">
+            {%- for block in section.blocks -%}
+                <div class="custom-video-card">
+                    <div class="sleepy-video">
+                        {{ block.settings.video | video_tag: loop: true, muted: true, autoplay: true, controls: false, class: 'cs-video-element' }}
+                    </div>
+                    <div class="video-play-btn">
+                        {%- assign play = section.settings.play -%}
+                        {% if play != blank %}
+                        <img src="{{ play | img_url : 'master' }}" alt="Play Button" class="vd-cs-play-button" />
+                        {% endif %}
+                    </div>
+                </div>
+                
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+<script>
+   $(document).ready(function() {
+    // Use event delegation for dynamic elements
+    $('.custom-video-card').each(function() {
+        var card = $(this); // Current video card
+        var playButton = card.find('.vd-cs-play-button');
+        var video = card.find('.cs-video-element');
+
+        // Set video to paused and show the play button on page load
+        video.get(0).pause();
+        playButton.show();
+
+        // Add event listener for click event on play button
+        playButton.on('click', function() {
+            // Hide the play button and play the video
+            playButton.hide();
+            video.get(0).play();
+        });
+
+        // Add event listener for click event on the video
+        video.on('click', function() {
+            // Toggle play/pause when the video is clicked
+            if (video.get(0).paused) {
+                video.get(0).play();
+                playButton.hide(); // Hide play button when playing
+            } else {
+                video.get(0).pause();
+                playButton.show(); // Show play button when paused
+            }
+        });
+
+        // Show play button when the video ends
+        video.on('ended', function() {
+            playButton.show();
+        });
+    });
+});
+
+</script>
+
+
+
+
+{% schema %}
+  {
+  "name": "Sleepy Video",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "text"
+    },
+    {
+        "type": "image_picker",
+        "label": "Play",
+        "id": "play"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Block",
+      "type": "block",
+      "settings": [
+        {
+          "type": "video",
+          "label": "Video",
+          "id": "video"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sleepy Video"
+    }
+  ]
+}  
+{% endschema %}
