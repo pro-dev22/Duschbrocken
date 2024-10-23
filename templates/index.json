@@ -399,10 +399,17 @@
       "settings": {
         "text": "Frequently Asked Questions"
       }
+    },
+    "made_in_uk_WMg8kh": {
+      "type": "made-in-uk",
+      "settings": {
+        "uk": ""
+      }
     }
   },
   "order": [
     "custom_image_banner_G4bKtA",
+    "made_in_uk_WMg8kh",
     "featured_collection",
     "find_your_style_yXhkJc",
     "discover_you_fav_iynQgp",
