@@ -382,9 +382,7 @@
   justify-content: flex-start;
 }
 
-.footer-block-image.center {
-  justify-content: center;
-}
+
 
 .footer-block-image.right {
   justify-content: flex-end;
@@ -699,7 +697,9 @@ h3.all-right-res {
     .the-main-newsletter {
         max-width: 365px;
     }
-
+    .footer-block-image.center {
+      justify-content: center;
+    }
     .duel-ul ul {
         margin: 0;
     }
