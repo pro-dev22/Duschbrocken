@@ -1,0 +1,27 @@
+<div class="made-in-uk">
+    <div class="made-in-text">
+        <h3>
+            {{ section.settings.uk }}
+        </h3>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+    "name": "Made in Uk",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Made in Uk",
+        "id": "uk"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Made in Uk"
+      }
+    ]
+  }  
+  {% endschema %}
+  
