@@ -9,20 +9,13 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "custom_image_banner_G4bKtA": {
+      "type": "custom-image-banner",
       "settings": {
-        "image": "shopify://shop_images/sliderew.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "desk_img": "shopify://shop_images/sliderew.png",
+        "desk_url": "",
+        "mbil_img": "shopify://shop_images/Banner-mbil.png",
+        "mbil_url": ""
       }
     },
     "featured_collection": {
@@ -409,7 +402,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "custom_image_banner_G4bKtA",
     "featured_collection",
     "find_your_style_yXhkJc",
     "discover_you_fav_iynQgp",
