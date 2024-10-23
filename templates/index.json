@@ -399,9 +399,17 @@
       "settings": {
         "text": "Frequently Asked Questions"
       }
+    },
+    "made_in_uk_EdrcDN": {
+      "type": "made-in-uk",
+      "settings": {
+        "uk": "Made in UK",
+        "uk_flag": "shopify://shop_images/Groupsvg.png"
+      }
     }
   },
   "order": [
+    "made_in_uk_EdrcDN",
     "custom_image_banner_G4bKtA",
     "featured_collection",
     "find_your_style_yXhkJc",
