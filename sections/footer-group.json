@@ -19,14 +19,19 @@
           "settings": {
             "image": "shopify://shop_images/image_198.png",
             "image_width": 100,
-            "alignment": "center"
+            "alignment": "center",
+            "info": "",
+            "fb_link": "",
+            "yt_link": "",
+            "insta_link": ""
           }
         },
         "link_list_XC3C4m": {
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
-            "menu": "footer"
+            "menu": "footer",
+            "menu2": ""
           }
         }
       },
@@ -38,6 +43,7 @@
         "color_scheme": "scheme-2",
         "newsletter_enable": true,
         "newsletter_heading": "Newsletter",
+        "newsletter_description": "93 Caradon HillUggeshallNR34 0WY01854 422413Mon - Fri 10 AM - 6 PM",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
