@@ -79,8 +79,13 @@
     padding: 4px 10px;
     border-radius: 8px;
     font-family: Poppins;
+    display: flex;
+    align-items: center;
 }
-
+.sleepy-reviews a svg {
+    width: 25px;
+    height: 16px;
+}
 .sleepy-revws-nmbr p {
     margin: 0;
     font-family: Poppins;
@@ -148,6 +153,8 @@
     .sleepy-reviews a {
         max-width: 233px;
         margin: auto;
+        min-width: 233px;
+        justify-content: space-around;
     }
 
     .sleepy-revires-w-txt {
