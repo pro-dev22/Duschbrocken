@@ -1,5 +1,53 @@
+<style>
+    .made-in-text {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.made-in-text h3 {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.made-in-uk {
+    background-color: #1E3851;
+    text-align: center;
+}
+
+.made-in-flag img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.made-in-uk {
+    display: none;
+}
+@media only screen and (max-width: 990px) {
+    .made-in-uk {
+    display: block;
+}
+}
+</style>
+
+
+
 <div class="made-in-uk">
     <div class="made-in-text">
+        <div class="made-in-flag">
+            {%- assign uk_flag = section.settings.uk_flag -%}
+            {% if uk_flag != blank %}
+                <img src="{{ uk_flag | img_url: 'master' }}">
+            {% endif %}
+        </div>
         <h3>
             {{ section.settings.uk }}
         </h3>
@@ -13,9 +61,15 @@
     "settings": [
       {
         "type": "text",
-        "label": "Made in Uk",
+        "label": "Made in Text",
         "id": "uk"
+      },
+      {
+        "type": "image_picker",
+        "label": "Flag",
+        "id": "uk_flag"
       }
+      
     ],
     "presets": [
       {
