@@ -61,11 +61,11 @@
             endif
           -%}
           <div
-            class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="hello-to-footer footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
-          >
+           >
             {%- for block in section.blocks -%}
               <div
                 class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -76,7 +76,7 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h2 class="footer-block__heading inline-richtext just-center">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -88,18 +88,34 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
-                        {%- for link in block.settings.menu.links -%}
-                          <li>
-                            <a
-                              href="{{ link.url }}"
-                              class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
-                            >
-                              {{ link.title | escape }}
-                            </a>
-                          </li>
-                        {%- endfor -%}
-                      </ul>
+                      <div class="duel-ul">
+                        <ul class="footer-block__details-content list-unstyled">
+                          {%- for link in block.settings.menu.links -%}
+                            <li>
+                              <a
+                                href="{{ link.url }}"
+                                class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                              >
+                                {{ link.title | escape }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                        {%- if block.settings.menu2 != blank -%}
+                          <ul class="footer-block__details-content list-unstyled">
+                            {%- for link in block.settings.menu2.links -%}
+                              <li>
+                                <a
+                                  href="{{ link.url }}"
+                                  class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                                >
+                                  {{ link.title | escape }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {% endif %}
+                      </div>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
@@ -153,32 +169,56 @@
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
                     </div>
+                    <div class="text-area-logo">
+                      <div class="shop-info">
+                        {{ block.settings.info }}
+                      </div>
+                      <div class="shop-social-icons">
+                        <a href="{{ block.settings.fb_link }}">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M14 9.3V12.2H16.6C16.8 12.2 16.9 12.4 16.9 12.6L16.5 14.5C16.5 14.6 16.3 14.7 16.2 14.7H14V22H11V14.8H9.3C9.1 14.8 9 14.7 9 14.5V12.6C9 12.4 9.1 12.3 9.3 12.3H11V9C11 7.3 12.3 6 14 6H16.7C16.9 6 17 6.1 17 6.3V8.7C17 8.9 16.9 9 16.7 9H14.3C14.1 9 14 9.1 14 9.3Z" stroke="#DADADA" stroke-miterlimit="10" stroke-linecap="round"/>
+                          <path d="M15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9V15C22 20 20 22 15 22Z" stroke="#DADADA" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                        <a href="{{ block.settings.yt_link }}">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <path d="M20 23H10C7 23 5 21 5 18V12C5 9 7 7 10 7H20C23 7 25 9 25 12V18C25 21 23 23 20 23Z" stroke="#DADADA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14.4 12.5001L16.9 14.0001C17.8 14.6001 17.8 15.5001 16.9 16.1001L14.4 17.6001C13.4 18.2001 12.6 17.7001 12.6 16.6001V13.6001C12.6 12.3001 13.4 11.9001 14.4 12.5001Z" stroke="#DADADA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                        <a href="{{ block.settings.insta_link }}">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                          <path d="M13.75 7.54592C12.4735 7.54592 11.2257 7.92444 10.1643 8.63363C9.10294 9.34281 8.2757 10.3508 7.78721 11.5301C7.29871 12.7095 7.1709 14.0072 7.41993 15.2591C7.66896 16.5111 8.28366 17.6611 9.18628 18.5637C10.0889 19.4663 11.2389 20.081 12.4909 20.3301C13.7428 20.5791 15.0405 20.4513 16.2199 19.9628C17.3992 19.4743 18.4072 18.6471 19.1164 17.5857C19.8256 16.5243 20.2041 15.2765 20.2041 14C20.2041 12.2883 19.5241 10.6467 18.3137 9.43628C17.1033 8.2259 15.4617 7.54592 13.75 7.54592ZM13.75 18.7704C12.8065 18.7704 11.8842 18.4906 11.0997 17.9664C10.3152 17.4423 9.70378 16.6972 9.34272 15.8256C8.98166 14.9539 8.88719 13.9947 9.07125 13.0693C9.25532 12.144 9.70966 11.294 10.3768 10.6268C11.044 9.95966 11.894 9.50532 12.8193 9.32125C13.7447 9.13719 14.7039 9.23166 15.5756 9.59272C16.4472 9.95378 17.1923 10.5652 17.7164 11.3497C18.2406 12.1342 18.5204 13.0565 18.5204 14C18.5167 15.2641 18.0129 16.4753 17.1191 17.3691C16.2253 18.2629 15.0141 18.7667 13.75 18.7704ZM19.9235 0.25H7.57653C5.56711 0.25 3.63999 1.04824 2.21911 2.46911C0.798239 3.88999 0 5.81711 0 7.82653V20.1735C0 22.1829 0.798239 24.11 2.21911 25.5309C3.63999 26.9518 5.56711 27.75 7.57653 27.75H19.9235C21.9329 27.75 23.86 26.9518 25.2809 25.5309C26.7018 24.11 27.5 22.1829 27.5 20.1735V7.82653C27.5 5.81711 26.7018 3.88999 25.2809 2.46911C23.86 1.04824 21.9329 0.25 19.9235 0.25ZM25.8163 20.1735C25.8163 21.7364 25.1955 23.2352 24.0903 24.3403C22.9852 25.4455 21.4864 26.0663 19.9235 26.0663H7.57653C6.01365 26.0663 4.51478 25.4455 3.40965 24.3403C2.30453 23.2352 1.68367 21.7364 1.68367 20.1735V7.82653C1.68367 6.26365 2.30453 4.76478 3.40965 3.65965C4.51478 2.55453 6.01365 1.93367 7.57653 1.93367H19.9235C21.4864 1.93367 22.9852 2.55453 24.0903 3.65965C25.1955 4.76478 25.8163 6.26365 25.8163 7.82653V20.1735ZM22.449 6.70408C22.449 6.98158 22.3667 7.25285 22.2125 7.48358C22.0583 7.71431 21.8392 7.89415 21.5828 8.00034C21.3265 8.10653 21.0444 8.13432 20.7722 8.08018C20.5 8.02605 20.25 7.89242 20.0538 7.6962C19.8576 7.49997 19.724 7.24997 19.6698 6.97781C19.6157 6.70564 19.6435 6.42353 19.7497 6.16715C19.8559 5.91078 20.0357 5.69165 20.2664 5.53748C20.4971 5.38331 20.7684 5.30102 21.0459 5.30102C21.418 5.30102 21.7749 5.44884 22.038 5.71197C22.3012 5.97509 22.449 6.33197 22.449 6.70408Z" fill="#DADADA"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
                 {%- endcase -%}
               </div>
             {%- endfor -%}
-          </div>
-        {%- endif -%}
-
-        <div
+            <div
           class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
           {% endif %}
-        >
+         >
           {%- if section.settings.newsletter_enable -%}
-            <div class="footer-block__newsletter">
+            <div class="footer-block__newsletter the-main-newsletter">
               {%- if section.settings.newsletter_heading != blank -%}
                 <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
               {%- endif -%}
+              {%- if section.settings.newsletter_description != blank -%}
+                <h3 class="footer-block-description">{{ section.settings.newsletter_description }}</h3>
+              {%- endif -%}
               {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                 <input type="hidden" name="contact[tags]" value="newsletter">
-                <div class="newsletter-form__field-wrapper">
+                <div class="newsletter-form__field-wrapper footer-field-wrap">
                   <div class="field">
                     <input
                       id="NewsletterForm--{{ section.id }}"
                       type="email"
                       name="contact[email]"
-                      class="field__input"
+                      class="custom-footer-input field__input"
                       value="{{ form.email }}"
                       aria-required="true"
                       autocorrect="off"
@@ -191,24 +231,31 @@
                       {% elsif form.posted_successfully? %}
                         aria-describedby="ContactFooter-success"
                       {% endif %}
-                      placeholder="{{ 'newsletter.label' | t }}"
+                      placeholder="Enter your email"
                       required
                     >
-                    <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                    {% comment %} <label class="field__label" for="NewsletterForm--{{ section.id }}">
                       {{ 'newsletter.label' | t }}
+                    </label> {% endcomment %}
+                    <label class="positioned-scm">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path d="M14.3112 17.5834H5.97789C3.47789 17.5834 1.81122 16.3334 1.81122 13.4167V7.58342C1.81122 4.66675 3.47789 3.41675 5.97789 3.41675H14.3112C16.8112 3.41675 18.4779 4.66675 18.4779 7.58342V13.4167C18.4779 16.3334 16.8112 17.5834 14.3112 17.5834Z" stroke="#8C8C8C" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.3112 8L11.7028 10.0833C10.8445 10.7667 9.43617 10.7667 8.57784 10.0833L5.97784 8" stroke="#8C8C8C" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
                     </label>
-                    <button
+                  </div>
+                  <button
                       type="submit"
-                      class="newsletter-form__button field__button"
+                      class="newsletter-btn newsletter-form__button field__button"
                       name="commit"
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
                     >
-                      <span class="svg-wrapper">
+                      {% comment %} <span class="svg-wrapper">
                         {{- 'icon-arrow.svg' | inline_asset_content -}}
-                      </span>
+                      </span> {% endcomment %}
+                      Subscribe
                     </button>
-                  </div>
                   {%- if form.errors -%}
                     <small class="newsletter-form__message form__message" id="ContactFooter-error">
                       <span class="svg-wrapper">
@@ -246,6 +293,10 @@
             {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
         </div>
+          </div>
+        {%- endif -%}
+
+        
       </div>
     {%- endunless -%}
   {%- endif -%}
@@ -299,7 +350,7 @@
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
-        <small class="copyright__content"
+        {% comment %} <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
@@ -315,7 +366,8 @@
               {%- endif -%}
             {%- endfor -%}
           </ul>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
+        <h3 class="all-right-res">Copyright© 2024 All Rights Reserved</h3>
       </div>
     </div>
   </div>
@@ -344,6 +396,11 @@
           "default": "footer",
           "label": "t:sections.footer.blocks.link_list.settings.menu.label",
           "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+        },
+        {
+          "type": "link_list",
+          "id": "menu2",
+          "label": "Second Half Link List"
         }
       ]
     },
@@ -424,7 +481,28 @@
             }
           ],
           "default": "center"
+        },
+        {
+          "type": "textarea",
+          "label": "Shop Information",
+          "id": "info"
+        },
+        {
+          "type": "url",
+          "label": "Facebook Link",
+          "id": "fb_link"
+        },
+        {
+          "type": "url",
+          "label": "YouTube Link",
+          "id": "yt_link"
+        },
+        {
+          "type": "url",
+          "label": "Insta Link",
+          "id": "insta_link"
         }
+
       ]
     }
   ],
@@ -451,6 +529,11 @@
       "id": "newsletter_heading",
       "default": "t:sections.footer.settings.newsletter_heading.default",
       "label": "t:sections.footer.settings.newsletter_heading.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "newsletter_description",
+      "label": "Newsletter Description"
     },
     {
       "type": "header",
