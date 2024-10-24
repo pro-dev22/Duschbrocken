@@ -435,6 +435,23 @@
       "settings": {
         "text": "Frequently Asked Questions"
       }
+    },
+    "1729782579dd8e4049": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_TXCDjM": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_TXCDjM"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -448,6 +465,7 @@
     "sleepy_video_section_T3mhfV",
     "easy_steps_4icxfK",
     "bedstr_mattress_cMaKzV",
-    "custom_accordion_RrYaVC"
+    "custom_accordion_RrYaVC",
+    "1729782579dd8e4049"
   ]
 }
