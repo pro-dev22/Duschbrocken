@@ -102,18 +102,11 @@
             "img": "shopify://shop_images/Frame_48098115.png"
           }
         },
-        "block_eBKqbC": {
+        "block_aAKkW6": {
           "type": "block",
           "settings": {
             "product": "antique-drawers",
-            "img": "shopify://shop_images/Frame_48098115.png"
-          }
-        },
-        "block_jUbJdr": {
-          "type": "block",
-          "settings": {
-            "product": "antique-drawers",
-            "img": "shopify://shop_images/Frame_48098115.png"
+            "img": "shopify://shop_images/Typedfg.png"
           }
         },
         "block_bDExHE": {
@@ -123,13 +116,6 @@
             "img": "shopify://shop_images/Frame_48098115.png"
           }
         },
-        "block_aAKkW6": {
-          "type": "block",
-          "settings": {
-            "product": "antique-drawers",
-            "img": "shopify://shop_images/Typedfg.png"
-          }
-        },
         "block_gUTEbf": {
           "type": "block",
           "settings": {
@@ -137,11 +123,25 @@
             "img": "shopify://shop_images/Typedfg.png"
           }
         },
+        "block_jUbJdr": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Frame_48098115.png"
+          }
+        },
         "block_kNYqTb": {
           "type": "block",
           "settings": {
             "product": "antique-drawers",
             "img": "shopify://shop_images/Typedfg.png"
+          }
+        },
+        "block_eBKqbC": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Frame_48098115.png"
           }
         },
         "block_y9LFHY": {
@@ -154,12 +154,12 @@
       },
       "block_order": [
         "block_kKBYaf",
-        "block_eBKqbC",
-        "block_jUbJdr",
-        "block_bDExHE",
         "block_aAKkW6",
+        "block_bDExHE",
         "block_gUTEbf",
+        "block_jUbJdr",
         "block_kNYqTb",
+        "block_eBKqbC",
         "block_y9LFHY"
       ],
       "settings": {
