@@ -3743,3 +3743,54 @@ span.svg-wrapper {
   padding: 0 1.5rem !important;
 }
 }
+
+
+/* css for Judge me */
+
+
+
+section#shopify-section-template--18770036064492__1729782579dd8e4049 {
+  background-color: #F3FAFF;
+}
+section#shopify-section-template--18769542709484__1729782579dd8e4049 {
+  background-color: #F3FAFF;
+}
+
+.jdgm-carousel-item__inner-wrapper {
+  background-color: white;
+  border-radius: 8px !important;
+}
+
+.page-width.scroll-trigger.animate--slide-in {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.jdgm-carousel-item__review-title.jdgm-line-clamp {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: black;
+  margin: 10px 0;
+}
+.jdgm-carousel-item__review-body {
+  -webkit-line-clamp: 2 !important;
+}
+.jdgm-carousel-item__review-body.jdgm-line-clamp p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  color: #000000;
+}
+.jdgm-carousel-item__reviewer-name.jdgm-ellipsis {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  color: #000000;
+}
