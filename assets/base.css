@@ -3731,6 +3731,14 @@ details-modal.header__search .svg-wrapper {
   color: black;
   font-weight: bold;
 }
+.on-mbil-none {
+  display: none;
+}
+
+span.svg-wrapper {
+  width: 25px;
+  height: 25px;
+}
 .header {
   padding: 0 1.5rem !important;
 }
