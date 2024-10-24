@@ -9,6 +9,13 @@
  */
 {
   "sections": {
+    "made_in_uk_EdrcDN": {
+      "type": "made-in-uk",
+      "settings": {
+        "uk": "Made in UK",
+        "uk_flag": "shopify://shop_images/Groupsvg.png"
+      }
+    },
     "custom_image_banner_G4bKtA": {
       "type": "custom-image-banner",
       "settings": {
@@ -91,40 +98,69 @@
         "block_kKBYaf": {
           "type": "block",
           "settings": {
-            "product": "antique-drawers"
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Frame_48098115.png"
           }
         },
-        "block_gExrfK": {
+        "block_eBKqbC": {
           "type": "block",
           "settings": {
-            "product": "antique-drawers"
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Frame_48098115.png"
+          }
+        },
+        "block_jUbJdr": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Frame_48098115.png"
+          }
+        },
+        "block_bDExHE": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Frame_48098115.png"
           }
         },
         "block_aAKkW6": {
           "type": "block",
           "settings": {
-            "product": "antique-drawers"
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Typedfg.png"
           }
         },
-        "block_itUXNE": {
+        "block_gUTEbf": {
           "type": "block",
           "settings": {
-            "product": "antique-drawers"
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Typedfg.png"
           }
         },
-        "block_9w3mmg": {
+        "block_kNYqTb": {
           "type": "block",
           "settings": {
-            "product": "antique-drawers"
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Typedfg.png"
+          }
+        },
+        "block_y9LFHY": {
+          "type": "block",
+          "settings": {
+            "product": "antique-drawers",
+            "img": "shopify://shop_images/Typedfg.png"
           }
         }
       },
       "block_order": [
         "block_kKBYaf",
-        "block_gExrfK",
+        "block_eBKqbC",
+        "block_jUbJdr",
+        "block_bDExHE",
         "block_aAKkW6",
-        "block_itUXNE",
-        "block_9w3mmg"
+        "block_gUTEbf",
+        "block_kNYqTb",
+        "block_y9LFHY"
       ],
       "settings": {
         "text": "Discover Your Favourites"
@@ -398,13 +434,6 @@
       ],
       "settings": {
         "text": "Frequently Asked Questions"
-      }
-    },
-    "made_in_uk_EdrcDN": {
-      "type": "made-in-uk",
-      "settings": {
-        "uk": "Made in UK",
-        "uk_flag": "shopify://shop_images/Groupsvg.png"
       }
     }
   },
