@@ -1,0 +1,222 @@
+
+<style>
+    .mobile-banner {
+        display: none;
+    }
+    .desktop-banner img {
+        width: 100%;
+        display: flex;
+    }
+
+    .pos-head-f1 h2 {
+    font-size: 100px;
+    margin: 0;
+    line-height: 80px;
+    font-weight: bold;
+}
+span.pos-h1-p1 {
+    font-size: 120px;
+}
+.pos-banner-main {
+    position: relative;
+}
+
+.pos-heads {
+    position: absolute;
+    top: 30px;
+    left: 4%;
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+}
+
+.pos-banner-main .desktop-banner img {
+    max-height: 537px;
+}
+
+.pos-head-f1 h6 {
+    margin: 0;
+    font-size: 20px;
+    width: fit-content;
+    background-color: #F79300;
+    padding: 0 10px;
+    position: absolute;
+    top: 44%;
+    right: 43%;
+    rotate: -15deg;
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+.pos-head-f1 {
+    position: relative;
+}
+.banner-btns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 160px;
+}
+
+a.pos-btn-1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1E3851;
+    border: 2px solid #1E3851;
+    max-width: 300px;
+    padding: 0 20px;
+}
+
+a.pos-btn-2 {
+    background-color: #F79300;
+    color: #1E3851;
+    font-family: 'Poppins';
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 18px;;
+}
+@media only screen and (max-width: 769px) {
+    .banner-btns {
+    gap: 60px;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+    .mobile-banner {
+    display: block;
+    }
+    .desktop-banner {
+        display: none;
+    }
+
+    .mobile-banner img {
+        display: flex;
+        width: 100%;
+    }
+    .pos-mbil-banner img {
+    min-height: 550px;
+    object-fit: cover;
+    object-position: left;
+}
+.pos-head-f1 h2 {
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+span.pos-h1-p1 {
+    font-size: 70px;
+    letter-spacing: 0;
+}
+
+.pos-heads {
+    width: 100%;
+    left: 7%;
+}
+
+.pos-head-f1 h6 {
+    font-size: 12px;
+    padding: 0 5px;
+    top: 40%;
+}
+
+a.pos-btn-1 {
+    font-size: 20px;
+}
+
+.banner-btns {
+    gap: 30px;
+}
+}
+
+@media only screen and (max-width: 490px) {
+    .pos-heads {
+    left: 25%;
+    width: fit-content;
+}
+}
+
+@media only screen and (max-width: 400px) {
+    .pos-heads {
+    left: 19%;
+}
+}
+
+
+</style>
+
+<div class="custom-banner-whole">
+    <div class="full-width-banner">
+        <div class="pos-banner-main">
+            <div class="desktop-banner">
+                {%- assign desk_img = section.settings.desk_img -%}
+                {% if desk_img != blank %}
+                    <a href="{{ section.settings.desk_url }}"><img src="{{ desk_img | img_url: 'master' }}"></a>
+                {% endif %}
+            </div>
+            <div class="pos-heads">
+                <div class="pos-head-f1">
+                    <h2>{{ section.settings.text1 }}</h2>
+                    <h6>INTO</h6>
+                </div>
+                <div class="banner-btns">
+                    <a class="pos-btn-1">UP TO 70% OFF</a>
+                    <a class="pos-btn-2">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="mobile-banner pos-mbil-banner">
+                {%- assign mbil_img = section.settings.mbil_img -%}
+                {% if mbil_img != blank %}
+                    <a href="{{ section.settings.mbil_url }}"><img src="{{ mbil_img | img_url: 'master' }}"></a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+  "name": "Home Custom Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Desktop image",
+      "id": "desk_img"
+    },
+    {
+      "type": "url",
+      "label": "Desktop image Url",
+      "id": "desk_url"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "mbil_img"
+    },
+    {
+      "type": "url",
+      "label": "Mobile image Url",
+      "id": "mbil_url"
+    },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "text1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Custom Banner"
+    }
+  ]
+}  
+{% endschema %}
