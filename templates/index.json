@@ -9,6 +9,17 @@
  */
 {
   "sections": {
+    "home_banner_JqHtQa": {
+      "type": "home-banner",
+      "disabled": true,
+      "settings": {
+        "desk_img": "shopify://shop_images/house-plant-in-white-pot_925x_1c7b5cf8-0ab6-446c-98fa-112f0aaacce5.jpg",
+        "desk_url": "",
+        "mbil_img": "shopify://shop_images/house-plant-in-white-pot_925x_1c7b5cf8-0ab6-446c-98fa-112f0aaacce5.jpg",
+        "mbil_url": "",
+        "text1": "<span class=\"pos-h1-p1\">SPRING</span> SAVINGS!"
+      }
+    },
     "made_in_uk_EdrcDN": {
       "type": "made-in-uk",
       "settings": {
@@ -452,18 +463,10 @@
       "settings": {
         "text": "Frequently Asked Questions"
       }
-    },
-    "home_banner_JqHtQa": {
-      "type": "home-banner",
-      "settings": {
-        "desk_img": "shopify://shop_images/house-plant-in-white-pot_925x_1c7b5cf8-0ab6-446c-98fa-112f0aaacce5.jpg",
-        "desk_url": "",
-        "mbil_url": "",
-        "text1": "<span class=\"pos-h1-p1\">SPRING</span> SAVINGS!"
-      }
     }
   },
   "order": [
+    "home_banner_JqHtQa",
     "made_in_uk_EdrcDN",
     "custom_image_banner_G4bKtA",
     "featured_collection",
@@ -475,7 +478,6 @@
     "easy_steps_4icxfK",
     "1729782579dd8e4049",
     "bedstr_mattress_cMaKzV",
-    "custom_accordion_RrYaVC",
-    "home_banner_JqHtQa"
+    "custom_accordion_RrYaVC"
   ]
 }
