@@ -163,6 +163,7 @@ a.pos-btn-1 {
                     <a href="{{ section.settings.desk_url }}"><img src="{{ desk_img | img_url: 'master' }}"></a>
                 {% endif %}
             </div>
+          {% if desk_img != blank %}
             <div class="pos-heads">
                 <div class="pos-head-f1">
                     <h2>{{ section.settings.text1 }}</h2>
@@ -173,6 +174,7 @@ a.pos-btn-1 {
                     <a class="pos-btn-2">SHOP NOW</a>
                 </div>
             </div>
+          {% endif %}
             <div class="mobile-banner pos-mbil-banner">
                 {%- assign mbil_img = section.settings.mbil_img -%}
                 {% if mbil_img != blank %}
