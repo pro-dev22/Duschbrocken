@@ -334,6 +334,23 @@
         "heading": "Hassle-free shopping experience in 3 easy steps"
       }
     },
+    "1729782579dd8e4049": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_TXCDjM": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1600
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_TXCDjM"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "bedstr_mattress_cMaKzV": {
       "type": "bedstr-mattress",
       "blocks": {
@@ -435,23 +452,6 @@
       "settings": {
         "text": "Frequently Asked Questions"
       }
-    },
-    "1729782579dd8e4049": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_TXCDjM": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1600
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_TXCDjM"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -464,8 +464,8 @@
     "full_banner_bg_img_JRGqDe",
     "sleepy_video_section_T3mhfV",
     "easy_steps_4icxfK",
+    "1729782579dd8e4049",
     "bedstr_mattress_cMaKzV",
-    "custom_accordion_RrYaVC",
-    "1729782579dd8e4049"
+    "custom_accordion_RrYaVC"
   ]
 }
