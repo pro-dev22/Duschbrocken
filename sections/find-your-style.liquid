@@ -40,7 +40,16 @@
 .fys-collection-cad {
     position: relative;
 }
+span.collections-errow {
+    display: flex;
+}
 
+.fys-collection-cad p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
 @media only screen and (max-width: 600px) {
     .find-your-style-colllection {
@@ -105,7 +114,12 @@
                         {% if collection.featured_image != blank %}
                             <img src="{{ collection.featured_image | img_url: 'master'}}">
                         {% endif %}
-                        <p>{{ collection.title }}</p>
+                        <p>{{ collection.title }}<span class="collections-errow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 8 15" fill="none">
+                                <path d="M0.252034 14.4732C0.0944401 14.2581 0.0107187 14.0215 0.000869081 13.7633C-0.00898051 13.5052 0.074741 13.2793 0.252034 13.0857L5.45262 7.4064L0.222485 1.69487C0.0648914 1.52277 -0.00898051 1.29151 0.000869081 1.00109C0.0107187 0.710676 0.0944401 0.479419 0.252034 0.30732C0.449025 0.0921959 0.660791 -0.00998789 0.887332 0.000768299C1.11387 0.0115245 1.31579 0.113708 1.49308 0.30732L7.37329 6.72876C7.47178 6.83632 7.54073 6.94389 7.58013 7.05145C7.61953 7.15901 7.63923 7.27733 7.63923 7.4064C7.63923 7.53548 7.61953 7.65379 7.58013 7.76136C7.54073 7.86892 7.47178 7.97648 7.37329 8.08404L1.52263 14.4732C1.34534 14.6668 1.1385 14.7583 0.902106 14.7475C0.665716 14.7367 0.449025 14.6453 0.252034 14.4732Z" fill="white"/>
+                            </svg>
+                            </span>
+                        </p>
                     </div>
                     </a>
             {%- endfor -%}
